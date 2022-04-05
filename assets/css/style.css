@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('../img/header/back.jpg');
+    background-repeat: no-repeat;
+    height: 43rem;
+    background-position: center;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: #1b75bb;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.alt--blue {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1b75bb;
+}
+
+
+/* HEADER  */
+
+.firstline__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+}
+
+.firstline__items {
+    min-width: 383px;
+}
+
+.firstline__items ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 383px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.firstline__items ul li {
+    list-style-type: none;
+}
+
+.firstline__items ul a {
+    text-decoration: none;
+    color: #081f32;
+}
+
+.firstline__items ul a:hover {
+    color: blue;
+}
+
+.secondline__desc {
+    display: flex;
+    flex-direction: column;
+    max-width: 456px;
+    margin-top: 60px;
+    margin-left: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.secondline__desc h1 {
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 120%;
+    color: #081f32;
+}
+
+.secondline__desc span {
+    color: #1b75bb;
+}
+
+.secondline__text {
+    max-width: 332px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #081f32;
+    opacity: 0.6;
+}
+
+
+/* .secondline__button {
+    height: 10rem;
+} */
+
+
+/* /HEADER */
+
+
+/* DAYS */
+
+.days {
+    display: flex;
+    max-width: 687px;
+    min-height: 110px;
+    margin-bottom: 133px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    backdrop-filter: blur(70px);
+    border-radius: 10px;
+    top: -65px;
+    left: 0;
+    margin-left: 22.5rem;
+}
+
+.days__chek h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.days__chek p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.8;
+}
+
+.days__all {
+    line-height: 2;
+}
+
+.days__border {
+    border-left: 2px solid #9dacb8;
+    height: 34px;
+}
+
+
+/* /DAYS */
+
+
+/* HOLIDAYS */
+
+.holidays {
+    /* padding: 100px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.holidays__images {
+    position: relative;
+}
+
+.holidays--main {
+    border-radius: 10px;
+}
+
+.holidays--add {
+    position: absolute;
+    opacity: 0.5;
+    top: -47px;
+    right: -47px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.holidays--sprite {
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.holidays__content {
+    max-width: 430px;
+    min-height: 222px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.holidays--title {
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+
+/* WHY YOU CHOSE  */
+
+.why {
+    margin-top: 157px;
+    margin-bottom: 140px;
+}
+
+.why__choose {
+    text-align: center;
+}
+
+.why__text {
+    display: inline-block;
+    max-width: 826px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.6;
+}
+
+.why__spec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.why__menu {
+    max-width: 17rem;
+    min-height: 258px;
+    border: 1px solid rgb(241, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 17px;
+    border-radius: 5px;
+}
+
+.why--opinion {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.why--text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.6;
+    text-align: center;
+}
+
+
+/* /WHY YOU CHOSE  */
+
+
+/* HOTEL GALLERY */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.gallery__about {
+    min-width: 34.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.gallery__text {
+    max-width: 439px;
+    min-height: 243px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery--tittle {
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+}
+
+.gallery--text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    padding-right: 120px;
+    opacity: 0.6;
+}
+
+.gallery__room {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 34.5rem;
+    min-height: 337px;
+    background-image: url('../img/Room/lux_room.jpg');
+    margin-bottom: 30px;
+}
+
+.gallery__prise {
+    max-width: 231px;
+    min-height: 126px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+}
+
+.gallery__book {
+    min-height: 90px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gallery__prise h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.prise {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    opacity: 0.8;
+    padding-left: 25px;
+}
+
+.gallery--mini {
+    background-image: url('../img/Room/mini.jpg');
+}
+
+.gallery--standle {
+    background-image: url('../img/Room/standle.jpg');
+}
+
+.gallery--single {
+    background-image: url('../img/Room/single.jpg');
+}
+
+.gallery--elite {
+    background-image: url('../img/Room/elite.jpg');
+}
+
+
+/* /HOTEL GALLERY */
+
+
+/* CLIENT SAY  */
+
+.comments_client {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 68px;
+    margin-top: 148px;
+}
+
+.comment {
+    text-align: center;
+    width: 360px;
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: 0.7;
+    padding: 40px 28px;
+    margin-bottom: 10px;
+}
+
+.comments__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comment__text {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    padding: 25px 0 30px 0;
+    text-indent: 12px;
+}
+
+.comment__text::before {
+    content: url('../img/kav.svg');
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    filter: grayscale(100%);
+}
+
+.comment__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #081f32;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.comment__name {
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 6px;
+    opacity: 0.7;
+}
+
+.comment:hover {
+    opacity: 1;
+}
+
+.comment:hover .comment__text::before {
+    filter: grayscale(0%);
+}
+
+
+/* /CLIENT SAY  */
+
+
+/* JOIN EMAIL */
+
+.join {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.join__stay {
+    margin-top: 140px;
+    display: inline-block;
+    text-align: center;
+}
+
+.stay--tittle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.subscribe__form {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.subscribe--btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.subscribe--email {
+    width: 100%;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-right: none;
+    padding-left: 24px;
+}
+
+
+/* /JOIN EMAIL */
+
+
+/* FOOTER */
+
+.footer__col {
+    display: flex;
+    width: 100%;
+    margin-top: 194px;
+}
+
+.first__col {
+    width: 21%;
+    margin-right: 75px;
+}
+
+.first--text {
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.7;
+}
+
+.first--links {
+    display: block;
+    padding-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #081f32;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+}
+
+.footer__link {
+    padding-left: 20px;
+    width: 75%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.second_col {
+    width: 19%;
+    display: flex;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.second--tittle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #081f32;
+    text-decoration: none;
+}
+
+.second--text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+
+.fourht__col {
+    width: 42%;
+    padding-top: 22px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #081f32;
+}
+
+.fourth__form {
+    display: flex;
+    margin-top: 30px;
+}
+
+.fourht__sub {
+    padding-top: 6px;
+}
+
+
+/* /FOOTER */
