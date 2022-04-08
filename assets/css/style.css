@@ -9,6 +9,7 @@ header {
     background-repeat: no-repeat;
     height: 43rem;
     background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -19,15 +20,16 @@ header {
 }
 
 .btn {
+    display: inline-block;
     padding: 15px 30px;
-    border: 1px solid white;
+    border: 1px solid;
     color: white;
     background-color: #1b75bb;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.alt--blue {
+.alt-blue {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -38,10 +40,14 @@ header {
     color: #1b75bb;
 }
 
+.active {
+    color: #1b75bb;
+}
+
 
 /* HEADER  */
 
-.firstline__menu {
+.firstline {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +80,7 @@ header {
     color: blue;
 }
 
-.secondline__desc {
+.secondline {
     display: flex;
     flex-direction: column;
     max-width: 456px;
@@ -84,7 +90,7 @@ header {
     flex-wrap: wrap;
 }
 
-.secondline__desc h1 {
+.secondline h1 {
     font-family: 'Gelasio';
     font-style: normal;
     font-weight: 600;
@@ -93,7 +99,7 @@ header {
     color: #081f32;
 }
 
-.secondline__desc span {
+.secondline span {
     color: #1b75bb;
 }
 
@@ -109,11 +115,6 @@ header {
     color: #081f32;
     opacity: 0.6;
 }
-
-
-/* .secondline__button {
-    height: 10rem;
-} */
 
 
 /* /HEADER */
@@ -153,11 +154,17 @@ header {
 
 .days__all {
     line-height: 2;
+    position: relative;
 }
 
-.days__border {
-    border-left: 2px solid #9dacb8;
+.days__all:not(:nth-child(3)):after {
+    content: '';
+    background-color: #9dacb8;
     height: 34px;
+    width: 2px;
+    position: absolute;
+    right: -30px;
+    top: 20px;
 }
 
 
@@ -177,11 +184,11 @@ header {
     position: relative;
 }
 
-.holidays--main {
+.holidays__main {
     border-radius: 10px;
 }
 
-.holidays--add {
+.holidays__add {
     position: absolute;
     opacity: 0.5;
     top: -47px;
@@ -190,7 +197,7 @@ header {
     border-radius: 10px;
 }
 
-.holidays--sprite {
+.holidays__sprite {
     position: absolute;
     left: -30px;
     bottom: -30px;
@@ -205,7 +212,7 @@ header {
     align-items: flex-start;
 }
 
-.holidays--title {
+.main-tittle {
     font-family: 'Gelasio';
     font-style: normal;
     font-weight: 500;
@@ -329,20 +336,20 @@ header {
     margin-bottom: 30px;
 }
 
-.gallery__prise {
-    max-width: 231px;
-    min-height: 126px;
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-}
-
 .gallery__book {
     min-height: 90px;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.gallery__prise {
+    max-width: 231px;
+    min-height: 126px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
 }
 
 .gallery__prise h3 {
@@ -385,7 +392,7 @@ header {
 
 /* CLIENT SAY  */
 
-.comments_client {
+.comments__client {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -565,7 +572,7 @@ header {
     justify-content: space-between;
 }
 
-.second_col {
+.second__col {
     width: 19%;
     display: flex;
     text-decoration: none;
