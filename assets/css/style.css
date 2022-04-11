@@ -222,7 +222,30 @@ header {
 }
 
 
-/* WHY YOU CHOSE  */
+/* 
+1024-1069.75
+
+768- 1024
+
+320-767.75
+
+*/
+
+@media (max-width: 1169.75px) {
+    .holidays__main {
+        max-width: 400px;
+    }
+    .main-tittle {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1023.75px) {}
+
+@media (max-width: 767.75px) {}
+
+
+/* WHY YOU CHOSE */
 
 .why {
     margin-top: 157px;
