@@ -44,6 +44,21 @@ header {
     color: #1b75bb;
 }
 
+.main-tittle {
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1023.75px) {
+    .btn {
+        padding: 10px 17px;
+    }
+}
+
 
 /* HEADER  */
 
@@ -116,6 +131,37 @@ header {
     opacity: 0.6;
 }
 
+@media (max-width: 1023.75px) {
+    .secondline h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 767.75px) {
+    .firstline {
+        display: flex;
+        flex-direction: column;
+    }
+    .firstline__items ul {
+        min-width: 300px;
+    }
+    .firstline__items {
+        min-width: 302px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .secondline h1 {
+        font-size: 29px;
+        margin-top: 20px;
+    }
+    .secondline__text {
+        color: black;
+    }
+    .secondline__button {
+        margin: 0 auto;
+    }
+}
+
 
 /* /HEADER */
 
@@ -167,6 +213,28 @@ header {
     top: 20px;
 }
 
+@media (max-width: 1169.75px) {
+    .days {
+        top: 0;
+        left: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767.75px) {
+    .days {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .days__all:not:after {
+        content: '';
+    }
+    .days a {
+        margin-top: 20px;
+    }
+}
+
 
 /* /DAYS */
 
@@ -212,37 +280,43 @@ header {
     align-items: flex-start;
 }
 
-.main-tittle {
-    font-family: 'Gelasio';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 140%;
-    margin-bottom: 30px;
-}
-
-
-/* 
-1024-1069.75
-
-768- 1024
-
-320-767.75
-
-*/
-
 @media (max-width: 1169.75px) {
     .holidays__main {
         max-width: 400px;
     }
-    .main-tittle {
-        font-size: 26px;
+}
+
+@media (max-width: 1023.75px) {
+    .holidays__main,
+    .holidays__add {
+        max-width: 300px;
+    }
+    .holidays__sprite {
+        max-width: 100px;
+    }
+    .holidays__content {
+        max-width: 49%;
     }
 }
 
-@media (max-width: 1023.75px) {}
-
-@media (max-width: 767.75px) {}
+@media (max-width: 767.75px) {
+    .holidays {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .holidays__content {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .holidays__content a {
+        margin: 0 auto;
+    }
+    .holidays__add {
+        top: -29px;
+        right: 0px;
+    }
+}
 
 
 /* WHY YOU CHOSE */
@@ -302,6 +376,25 @@ header {
     text-align: center;
 }
 
+@media (max-width: 1169.75px) {
+    .why__spec {
+        flex: 1 0 calc((100%-30px) / 2);
+    }
+    .why__menu {
+        max-width: 49%;
+    }
+}
+
+@media (max-width: 767.75px) {
+    .why__spec {
+        flex-direction: column;
+        align-items: center;
+    }
+    .why__menu {
+        max-width: 99%;
+    }
+}
+
 
 /* /WHY YOU CHOSE  */
 
@@ -316,7 +409,7 @@ header {
 }
 
 .gallery__about {
-    min-width: 34.5rem;
+    min-width: 49%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -409,6 +502,51 @@ header {
     background-image: url('../img/Room/elite.jpg');
 }
 
+@media (max-width: 1169.75px) {
+    .gallery__room {
+        min-width: 49%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .gallery__prise {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1023.75px) {
+    .gallery--text {
+        max-width: 358px;
+        padding-right: 0;
+    }
+    .gallery__prise {
+        max-width: 220px;
+        min-height: 108px;
+        position: relative;
+        right: 5px;
+        bottom: 120px;
+    }
+    .gallery__about {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767.75px) {
+    .gallery__room {
+        min-width: 99%;
+        background-size: cover;
+    }
+    .gallery__prise {
+        position: relative;
+        right: 0;
+        bottom: 42px;
+    }
+    .gallery__about {
+        min-width: 99%;
+        align-items: center;
+    }
+}
+
 
 /* /HOTEL GALLERY */
 
@@ -487,6 +625,28 @@ header {
     filter: grayscale(0%);
 }
 
+@media (max-width: 1169.75px) {
+    .comments__client {
+        display: flex;
+        justify-content: space-around;
+    }
+    .comment {
+        width: 49%;
+    }
+    .main-tittle {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 767.75px) {
+    .main-tittle {
+        font-size: 20px;
+    }
+    .comment {
+        width: 99%;
+    }
+}
+
 
 /* /CLIENT SAY  */
 
@@ -545,6 +705,18 @@ header {
     padding-left: 24px;
 }
 
+@media (max-width: 1169.75px) {
+    .main-tittle {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 767.75px) {
+    .subscribe__form {
+        width: 99%;
+    }
+}
+
 
 /* /JOIN EMAIL */
 
@@ -555,6 +727,7 @@ header {
     display: flex;
     width: 100%;
     margin-top: 194px;
+    justify-content: space-between;
 }
 
 .first__col {
@@ -644,6 +817,68 @@ header {
 
 .fourht__sub {
     padding-top: 6px;
+}
+
+.second__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1169.75px) {
+    .footer__col {
+        justify-content: space-between;
+    }
+    .second__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1023.75px) {
+    .first__col {
+        width: 33%;
+        margin-right: 20px;
+    }
+    .second__col {
+        width: 99%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .fourht__sub {
+        text-align: center;
+    }
+    .fourht__col {
+        width: 99%;
+    }
+    .second__menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 767.75px) {
+    .first__col {
+        width: 99%;
+    }
+    .footer__col {
+        flex-direction: column;
+    }
+    .second__col {
+        width: 99%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .fourht__sub {
+        text-align: center;
+    }
+    .fourht__col {
+        width: 99%;
+        margin-bottom: 50px;
+    }
+    .second__menu {
+        display: flex;
+        margin-top: 20px;
+    }
 }
 
 
