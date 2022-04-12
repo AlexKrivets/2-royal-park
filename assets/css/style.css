@@ -873,6 +873,7 @@ header {
     }
     .fourht__col {
         width: 99%;
+        margin-bottom: 50px;
     }
     .second__menu {
         display: flex;
